@@ -1,65 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Gestión de Grupos</title>
 </head>
 <body>
-    <div>
-        <h1>Bienvenido Maestr@!</h1>
-        <h2>Inicia sesion para monitorear calificaciones</h2>
-    </div>
-    <div class="login-container">
-        <h2>Iniciar sesión</h2>
-        <form  method="post">
-            <p>Nombre Completo</p>
-            <br>
-            <input id="name" type="text" name="usuario" placeholder="Usuario" required>
-            <p>Correo</p>
-            <br> 
-            <input id="email" type="email" name="correo" placeholder="email" required>
-            <p>Contraseña</p>
-            <br>
-            <input id="pass" type="password" name="contraseña" placeholder="Contraseña" required>
-            <br>
-            <input type="submit" value="Iniciar sesión">
-            <br>
-            <input id="singup" type="submit" value="Crear cuenta">
-        </form>
-    </div>
-    <div id="container">
-        <h2>Sign Up</h2>
-        <form action="submit.php" method="post">
-            <input type="text" name="fullname" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Sign Up">
-        </form>
 
-<div id="containermenu">
-    <H2>¿Qué materia impartes?</H2>
-    <p>Programacion PLC´s</p>
-    <p>Ecuaciones diferenciales</p>
-    <p>Control Digital</p>
-    <p>Maquinas Electricas</p>
-    <p>Sensores y transmisores inteligentes</p>
-    <p>Control distribuido SCADA</p>
-    <br>
-    <p> Asignar materia nueva</p>
-</div>
-<div id="options">
-    <h2>Opciones</h2>
-    <p>Dar alta a alumno(s)</p>
-    <p>Asignar calificacion</p>
-    <p>Calificacion total de grupo</p>
-    <p>Lista de calificaciones</p>
-    <p>Promedio mas alto</p>
-    <p>Promedio mas bajo</p>
-    <p>Lista completa con calificaciones</p>
-</div>
+<button id="btnAgregarGrupo">Agregar Grupo</button>
+<div id="gruposContainer"></div>
 
-    <script src="DB.js"></script>
+<div>
+    <label for="nombreAlumnoBuscar">Buscar Alumno por Nombre:</label>
+    <input type="text" id="nombreAlumnoBuscar">
+    <button id="btnBuscarAlumno">Buscar</button>
+</div>
+<div>
+    <label for="apellidoAlumnoBuscar">Buscar Alumno por apellido:</label>
+    <input type="text" id="apellidoAlumnoBuscar">
+    <button id="btnapellido">Buscar</button>
+</div>
+<script src="DB.js"></script>
 </body>
 </html>
